@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Claude Code — keep launch.json (shared dev server config),
+# ignore per-machine settings.
+.claude/settings.local.json
+
+# Logs
+*.log
+
+# Note: assets/ is intentionally NOT ignored. The images and fonts in
+# assets/ are the site itself — the pages break without them.
