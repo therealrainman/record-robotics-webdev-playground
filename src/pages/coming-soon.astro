@@ -3,48 +3,48 @@ import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="Coming Soon — Record Robotics" robots="noindex">
-  <main id="main">
-    <section class="stub">
-      <div>
-        <!-- JS fills this in from the URL hash, e.g. #about-us -> "About Us". -->
-        <h1><span data-stub-name>This page</span> is coming soon</h1>
-        <p>Only the home page has been built so far.</p>
-        <a class="btn" href="/">Back to Home</a>
-      </div>
-    </section>
-  </main>
+    <main id="main">
+        <section class="stub">
+            <div>
+                <!-- JS fills this in from the URL hash, e.g. #about-us -> "About Us". -->
+                <h1><span data-stub-name>This page</span> is coming soon</h1>
+                <p>Only the home page has been built so far.</p>
+                <a class="btn" href="/">Back to Home</a>
+            </div>
+        </section>
+    </main>
 
-  <script>
-    const PAGE_NAMES: Record<string, string> = {
-      "about-us": "About Us",
-      "mission-statement": "Mission Statement",
-      outreach: "Outreach",
-      competitions: "Competitions",
-      media: "Media",
-      newsletters: "Newsletters",
-      gallery: "Gallery",
-      join: "Join",
-      donate: "Donate",
-    };
+    <script>
+        const PAGE_NAMES: Record<string, string> = {
+            "about-us": "About Us",
+            "mission-statement": "Mission Statement",
+            outreach: "Outreach",
+            competitions: "Competitions",
+            media: "Media",
+            newsletters: "Newsletters",
+            gallery: "Gallery",
+            join: "Join",
+            donate: "Donate",
+        };
 
-    function initStub() {
-      const target = document.querySelector("[data-stub-name]");
-      if (!target) return;
+        function initStub() {
+            const target = document.querySelector("[data-stub-name]");
+            if (!target) return;
 
-      function render() {
-        const slug = window.location.hash.replace(/^#/, "");
-        target.textContent = PAGE_NAMES[slug] || "This page";
-        document.title = `${PAGE_NAMES[slug] || "Coming Soon"} — Record Robotics`;
-      }
+            function render() {
+                const slug = window.location.hash.replace(/^#/, "");
+                target.textContent = PAGE_NAMES[slug] || "This page";
+                document.title = `${PAGE_NAMES[slug] || "Coming Soon"} — Record Robotics`;
+            }
 
-      render();
-      window.addEventListener("hashchange", render);
-    }
+            render();
+            window.addEventListener("hashchange", render);
+        }
 
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", initStub);
-    } else {
-      initStub();
-    }
-  </script>
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", initStub);
+        } else {
+            initStub();
+        }
+    </script>
 </Layout>
