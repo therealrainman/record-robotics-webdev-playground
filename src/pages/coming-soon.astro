@@ -33,7 +33,7 @@ import Layout from "@/layouts/Layout.astro";
 
             function render() {
                 const slug = window.location.hash.replace(/^#/, "");
-                target.textContent = PAGE_NAMES[slug] || "This page";
+                if (target) target.textContent = PAGE_NAMES[slug] || "This page";
                 document.title = `${PAGE_NAMES[slug] || "Coming Soon"} — Record Robotics`;
             }
 
