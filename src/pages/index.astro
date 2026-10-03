@@ -2,8 +2,118 @@
 import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout title="record-robotics-demo-website">
-    <h1>record-robotics-demo-website</h1>
-    <h2>Demo homepage banner</h2>
-    <p>This is the demo homepage content</p>
+<Layout title="Record Robotics" description="Record Robotics — FRC Team #6731, Waltham, Massachusetts.">
+  <main id="main">
+    <!-- ==================================================================
+         Hero
+         ================================================================== -->
+    <section class="hero">
+      <img
+        class="hero__image"
+        src="/assets/img/hero.jpg"
+        alt="The Record Robotics team at a competition"
+      />
+    </section>
+
+    <!-- ==================================================================
+         Meeting times, season recaps, mission
+         ================================================================== -->
+    <section class="section section--blue">
+      <div class="section__inner">
+        <div class="block reveal">
+          <h2>Meeting Times</h2>
+          <h3>Monday &amp; Thursday: 7 - 9 PM</h3>
+          <iframe
+            class="embed embed--calendar"
+            title="Record Robotics team calendar"
+            src="https://calendar.google.com/calendar/embed?src=lhu8ck0338u0kdtgkq0sest6ck%40group.calendar.google.com&ctz=America%2FNew_York"
+            loading="lazy"></iframe>
+        </div>
+
+        <hr class="rule" />
+
+        <div class="block reveal">
+          <h2>2025-26 Season Recap</h2>
+          <h3>Stay tuned for updates from our latest season!</h3>
+        </div>
+
+        <div class="block reveal">
+          <h2>2024-25 Season Recap</h2>
+          <iframe
+            class="embed embed--video"
+            title="2024-25 season recap video"
+            src="https://www.youtube.com/embed/S_yi15szC-A"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"></iframe>
+        </div>
+
+        <hr class="rule" />
+
+        <div class="mission reveal">
+          <h3>
+            Giving young members of our community the chance to explore roles in
+            engineering, programming, and marketing in a safe and supportive
+            environment.
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Sponsors
+         ================================================================== -->
+    <section class="section section--white">
+      <div class="section__inner">
+        <div class="block reveal">
+          <h2>Sponsors</h2>
+        </div>
+
+        <hr class="rule" />
+
+        <div class="tier reveal">
+          <h3 class="tier__name">Platinum</h3>
+          <ul class="tier__names">
+            <li>Gregor Family Charitable Fund</li>
+            <li>Roome-Dubois Family</li>
+          </ul>
+        </div>
+
+        <hr class="rule" />
+
+        <div class="tier reveal">
+          <h3 class="tier__name">Gold</h3>
+          <ul class="tier__names">
+            <li>Glenn and Harriet Wong</li>
+            <li>The Hu/Yang Family</li>
+          </ul>
+          <div class="logo-grid">
+            <img src="/assets/img/sponsors/emerson.png" alt="Emerson" loading="lazy" />
+            <img src="/assets/img/sponsors/lions-international.png" alt="Lions International" loading="lazy" />
+            <img src="/assets/img/sponsors/mks.png" alt="MKS" loading="lazy" />
+            <img src="/assets/img/sponsors/novatio-engineering.png" alt="Novatio Engineering, Inc." loading="lazy" />
+            <img src="/assets/img/sponsors/ssg.png" alt="SSG" loading="lazy" />
+            <img src="/assets/img/sponsors/teradyne.png" alt="Teradyne" loading="lazy" />
+            <img src="/assets/img/sponsors/village-bank.jpg" alt="The Village Bank" loading="lazy" />
+            <img src="/assets/img/sponsors/watertown-savings-bank.png" alt="Watertown Savings Bank" loading="lazy" />
+          </div>
+        </div>
+
+        <hr class="rule" />
+
+        <div class="tier reveal">
+          <h3 class="tier__name">Bronze</h3>
+          <div class="logo-grid">
+            <img src="/assets/img/sponsors/mt-bank.png" alt="M&amp;T Bank" loading="lazy" />
+            <img src="/assets/img/sponsors/juliet-jenkins.png" alt="Juliet Jenkins" loading="lazy" />
+            <img src="/assets/img/sponsors/russian-school-of-mathematics.jpg" alt="Russian School of Mathematics" loading="lazy" />
+            <!-- White-on-white logo: given a tinted chip so it stays visible. -->
+            <img class="logo-grid__on-light" src="/assets/img/sponsors/revolution-makerspace.png" alt="Revolution Makerspace" loading="lazy" />
+            <img src="/assets/img/sponsors/the-robohub.jpg" alt="The RoboHub" loading="lazy" />
+            <img src="/assets/img/sponsors/building-knox.png" alt="Building Knox Company" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>

@@ -1,4 +1,5 @@
 # record-robotics-webdev-playground
+
 Playground for trying out web development for record-robotics.
 
 This is an example branch for SpaceOfJelly to work in.
@@ -38,7 +39,7 @@ the way they will in production.
 ### Option 3 — VS Code
 
 Install the **Live Server** extension, then right-click `index.html` →
-*Open with Live Server*. It reloads automatically as you edit.
+_Open with Live Server_. It reloads automatically as you edit.
 
 ## Project layout
 
@@ -55,7 +56,7 @@ docs/               design spec
 ## Editing notes
 
 - **The header and footer appear in both HTML files.** There is no templating,
-  so a change to the nav has to be made in `index.html` *and*
+  so a change to the nav has to be made in `index.html` _and_
   `coming-soon.html`. The markup is marked with a comment in both.
 - **Design tokens live in `:root`** at the top of `css/styles.css` — colours,
   font sizes, and the content width. Change them there, not inline.

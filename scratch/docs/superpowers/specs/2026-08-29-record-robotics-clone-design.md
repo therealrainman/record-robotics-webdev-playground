@@ -13,13 +13,13 @@ placeholder page.
 
 ## Decisions
 
-| Decision | Choice | Why |
-|---|---|---|
-| Assets | Downloaded into `assets/` | Self-contained; no dependency on the Squarespace CDN staying up |
-| Other pages | One shared `coming-soon.html` | Only the home page is in scope; one stub is cheaper to keep in sync than nine |
-| Fonts | `@font-face` from local `.woff2` | Page renders correctly with the network off |
-| Header/footer | Markup duplicated in both HTML files | `fetch`-based partials are CORS-blocked on `file://`; the header would silently vanish on double-click |
-| Calendar + video | Left as real iframes | Cannot be made offline. These are the only two network-dependent elements |
+| Decision         | Choice                               | Why                                                                                                    |
+| ---------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| Assets           | Downloaded into `assets/`            | Self-contained; no dependency on the Squarespace CDN staying up                                        |
+| Other pages      | One shared `coming-soon.html`        | Only the home page is in scope; one stub is cheaper to keep in sync than nine                          |
+| Fonts            | `@font-face` from local `.woff2`     | Page renders correctly with the network off                                                            |
+| Header/footer    | Markup duplicated in both HTML files | `fetch`-based partials are CORS-blocked on `file://`; the header would silently vanish on double-click |
+| Calendar + video | Left as real iframes                 | Cannot be made offline. These are the only two network-dependent elements                              |
 
 ## File Layout
 
