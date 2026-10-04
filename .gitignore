@@ -1,0 +1,23 @@
+# Node and Astro
+.astro
+node_modules
+dist
+release
+
+# Editor directories and files
+.vscode
+.idea
+.DS_Store
+.Spotlight-V100
+.Trashes
+*.log
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~
+._*
+
+# Claude Code
+.claude/
